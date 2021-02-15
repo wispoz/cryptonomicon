@@ -9,9 +9,7 @@
     ></div>
   </div>
 
-  <button type="button" class="absolute top-0 right-0"
-    @click.stop="deleteCoin"
-  >
+  <button type="button" class="absolute top-0 right-0" @click.stop="deleteCoin">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -40,6 +38,7 @@
 module.exports = {
   props: {
     coin: {
+      type: Object,
       required: true,
     },
   },
@@ -49,7 +48,6 @@ module.exports = {
   emits: ["coin-deleted"],
   methods: {
     deleteCoin() {
-
       this.$emit("coin-deleted", this.coin);
     },
     chartData() {
