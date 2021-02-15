@@ -4,7 +4,7 @@
           >
             <div class="px-4 py-5 sm:p-6 text-center">
               <dt class="text-sm font-medium text-gray-500 truncate">
-                    {{ coin.name }}
+                    {{ coin.name }} - USD
               </dt>
               <dd class="mt-1 text-3xl font-semibold text-gray-900">
             {{ coin.price }}
